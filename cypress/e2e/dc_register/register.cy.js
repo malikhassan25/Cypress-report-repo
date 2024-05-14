@@ -16,6 +16,17 @@ describe('Register Automation Test', () => {
         cy.get('#password_confirmation').should('be.visible');
         cy.get('.btn-submit1').should('be.visible');
     });
+    // Test Case for visibility of Input Fields and Sign-Up Button
+    it('visibility of Input Fields and Sign-Up Button', () => {
+        cy.get('[name="first_name"]').should('be.visible');
+        cy.get('[name="last_name"]').should('be.visible');
+        cy.get('[type="email"]').should('be.visible');
+        cy.get('.onlynumeric').should('be.visible');
+        cy.get('#password').should('be.visible');
+        cy.get('#password_confirmation').should('be.visible');
+        cy.get('.btn-submit1').should('be.visible');
+    });
+
 
     // Test Case for user Sign-up with valid credentials
     it('User Sign-up with valid credentials', () => {
